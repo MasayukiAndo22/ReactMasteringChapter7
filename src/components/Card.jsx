@@ -9,17 +9,14 @@ const style = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  alignItems: "center"
+  alignItems: "center",
 };
 
-export const Card = (props) => {
-  // props として管理者フラグ受領
-  const { isAdmin } = props;
-
+export const Card = () => {
   return (
     <div style={style}>
       <p>ホゲホゲ</p>
-      <EditButton isAdmin={isAdmin} />
+      <EditButton />
     </div>
   );
 };
